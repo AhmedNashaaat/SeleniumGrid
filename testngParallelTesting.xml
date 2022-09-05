@@ -1,0 +1,31 @@
+
+<suite name="nopcommerce Regration Suite" parallel="tests"
+	thread-count="2">
+
+
+	<test name="Chrome Regration Test">
+		<parameter name="browser" value="chrome">
+		</parameter>
+		<classes>
+			<class name="tests.UserRegistrationParallelTesting" />
+		</classes>
+	</test>
+	<test name="Firefox Regration Test">
+		<parameter name="browser" value="firefox">
+		</parameter>
+		<classes>
+			<class name="tests.UserRegistrationParallelTesting" />
+		</classes>
+	</test>
+	<test name="Edge Regration Test">
+		<parameter name="browser" value="MicrosoftEdge">
+		</parameter>
+		<classes>
+			<class name="tests.UserRegistrationParallelTesting" />
+
+		</classes>
+
+
+	</test>
+
+</suite> 
